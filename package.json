@@ -1,0 +1,25 @@
+{
+  "name": "sv16-assembly",
+  "displayName": "SV16 Assembly",
+  "description": "Assembly plugin for SV16",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sv16",
+      "aliases": ["SV16 Assembly", "sv16"],
+      "extensions": [".sv16"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sv16",
+      "scopeName": "source.sv16",
+      "path": "./syntaxes/sv16.tmLanguage.json"
+    }]
+  }
+}

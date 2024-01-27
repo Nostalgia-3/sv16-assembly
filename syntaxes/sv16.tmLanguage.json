@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SV16 Assembly",
+	"patterns": [
+		{
+			"include": "#instructions"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#registers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#directives"
+		},
+		{
+			"include": "#labels"
+		}
+	],
+	"repository": {
+		"instructions": {
+			"name": "support.function.sv16",
+			"patterns": [
+				{
+					"name": "support.function.sv16",
+					"match": "\\b(brk|int|rti|push|pop|pushr|popr|mov|str|add|sub|cmp|jump|jumpeq|jumpneq|jumple|jumpof|call|ret)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric.sv16",
+			"patterns": [{
+				"name": "constant.numeric.binary.sv16",
+				"match": "\\b(0b)[01]+\\b"	
+			}, {
+				"name": "constant.numeric.hex.sv16",
+				"match": "(\\b(0x)[0-9A-Fa-f]+\\b)"
+			}, {
+				"name": "constant.numeric.decimal.sv16",
+				"match": "\\b[0-9]+\\b"
+			}]
+		},
+		"registers": {
+			"name": "storage.sv16",
+			"patterns": [
+				{
+					"name": "storage.sv16",
+					"match": "\\br([0-7])\\b"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.sv16",
+			"patterns": [
+				{
+					"name": "comment.line.sv16",
+					"match": "#.*$"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.sv16",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.sv16",
+					"match": "\\\\."
+				}
+			]
+		},
+		"directives": {
+			"name": "keyword.control.sv16",
+			"patterns": [
+				{
+					"name": "keyword.control.sv16",
+					"match": "\\.(?i:ascii|asciiz|byte|short)\\b"
+				}
+			]
+		},
+		"labels": {
+			"name": "entity.name.function.sv16",
+			"patterns": [
+				{
+					"name": "entity.name.function.sv16",
+					"match": "^\\s*\\S*:"
+				}
+			]
+		}
+	},
+	"scopeName": "source.sv16"
+}
