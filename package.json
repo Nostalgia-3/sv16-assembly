@@ -9,6 +9,9 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "url": "https://github.com/Nostalgia-3/sv16-assembly"
+  },
   "contributes": {
     "languages": [{
       "id": "sv16",
