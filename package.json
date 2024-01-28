@@ -6,6 +6,10 @@
   "engines": {
     "vscode": "^1.85.0"
   },
+  "author": {
+    "name": "nostalgiathedev3"
+  },
+  "publisher": "nostalgiathedev3",
   "categories": [
     "Programming Languages"
   ],
