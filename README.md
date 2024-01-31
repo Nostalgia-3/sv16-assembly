@@ -14,6 +14,10 @@ Some real simple syntax highlighting (for right now).
 
 Users appreciate release notes as you update your extension.
 
+### 1.0.1
+
+Added new instructions (`and`, `or`, and `not`) and new directives (`include`, `define`, `org`, and `global`).
+
 ### 1.0.0
 
-Initial release of the plugin
+Initial release of the plugin.

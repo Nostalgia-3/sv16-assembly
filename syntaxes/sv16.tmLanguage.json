@@ -30,7 +30,7 @@
 			"patterns": [
 				{
 					"name": "support.function.sv16",
-					"match": "\\b(brk|int|rti|push|pop|pushr|popr|mov|str|add|sub|cmp|jump|jumpeq|jumpneq|jumple|jumpof|call|ret)\\b"
+					"match": "\\b(brk|int|rti|push|pop|pushr|popr|mov|str|add|sub|cmp|jump|jumpeq|jumpneq|jumple|jumpof|call|ret|and|or|not)\\b"
 				}
 			]
 		},
@@ -81,7 +81,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.sv16",
-					"match": "\\.(?i:ascii|asciiz|byte|short)\\b"
+					"match": "\\.(?i:ascii|asciiz|byte|short|include|define|org|global)\\b"
 				}
 			]
 		},
